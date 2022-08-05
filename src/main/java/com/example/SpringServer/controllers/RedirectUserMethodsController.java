@@ -1,3 +1,4 @@
+/*
 package com.example.SpringServer.controllers;
 
 import com.example.SpringServer.DAO.SearchPossibleFlightDAO;
@@ -17,7 +18,7 @@ public class RedirectUserMethodsController {
     HttpHeaders headers = new HttpHeaders();
 
     @GetMapping("/getAllCity")
-    ResponseEntity<?> getAllCity() {
+     ResponseEntity<?> getAllCity() {
         return restTemplate.exchange(directionOfMethods + "getAllCity",
                 HttpMethod.GET,
                 null,
@@ -78,3 +79,4 @@ public class RedirectUserMethodsController {
     }
 
 }
+*/
