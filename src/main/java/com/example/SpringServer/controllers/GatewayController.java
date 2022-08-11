@@ -53,7 +53,7 @@ public class GatewayController {
             .build();
   }
 
-  @RequestMapping(value = "/redirect/**", method = {GET, POST, DELETE})
+  @RequestMapping(value = "/redirect/**", method = {GET, POST, DELETE,PUT})
   @ResponseBody
   public ResponseEntity<String> proxyRequest(HttpServletRequest request) throws IOException, URISyntaxException {
     HttpUriRequest proxiedRequest = createHttpUriRequest(request);
